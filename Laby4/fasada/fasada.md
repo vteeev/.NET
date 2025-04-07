@@ -9,38 +9,44 @@ ___
 Problem: złożoność systemu i ścisłe powiązania (tight coupling)
 W dużych systemach:
 
--masz wiele klas i obiektów, które współdziałają,
+- mamy wiele klas i obiektów, które współdziałają,
 
--logika biznesowa musi znać szczegóły implementacji tych klas,
+- logika biznesowa musi znać szczegóły implementacji tych klas,
 
--musisz pamiętać kolejność wywołań metod, zależności między klasami itd.
+- musimy pamiętać o kolejności wywołań metod, zależności między klasami itd.
 
 To prowadzi do:
 
--chaosu w kodzie,
+- chaosu w kodzie,
 
--trudnego w utrzymaniu kodu,
+- trudnego w utrzymaniu kodu,
 
--większego ryzyka błędów,
+- większego ryzyka błędów,
 
--braku przejrzystości dla programisty czy klienta API.
+- braku przejrzystości dla programisty czy klienta API.
 ___
 
 
 (3)Rozwiązanie
-
--ukrywa wewnętrzną złożoność systemu (czyli tzw. podsystem),
-
--udostępnia uproszczony interfejs do kluczowej funkcjonalności.
+Fasada to klasa stanowiąca prosty interfejs dla złożonego podsystemu, zawierającego mnóstwo ruchomych części. Fasada może dawać ograniczoną funkcjonalność, w porównaniu z korzystaniem z elementów podsystemu bezpośrednio, ale za to eksponuje tylko te możliwości, których klient naprawdę potrzebuje.
 
 
-Co dokładnie robi fasada?
+===Zalety wzorca Fasada===
 
--Agreguje różne klasy pomocnicze/usługi.
+- Fasada upraszcza korzystanie z rozbudowanego lub skomplikowanego systemu, dostarczając prosty interfejs. 
 
--Izoluje klienta od szczegółów implementacji.
+- Klasy korzystające z podsystemów nie są z nimi bezpośrednio powiązane – komunikują się z nimi poprzez fasadę.
 
--Redukuje sprzężenie między klasami.
+- Zastosowanie fasady pomaga w uporządkowaniu kodu, oddzieleniu warstw aplikacji i zwiększeniu przejrzystości architektury.
+
+
+===Wady wzorca Fasada===
+
+- Potencjalna nadmierna centralizacja (boski obiekt)
+
+- Fasada upraszcza interfejs, ale może też ograniczyć dostęp do bardziej zaawansowanych funkcji. Użytkownicy mogą być zmuszeni do obchodzenia fasady, jeśli jej interfejs nie jest wystarczający.
+
+- W mniejszych projektach wprowadzenie fasady może być przesadne 
 ___
 
 
