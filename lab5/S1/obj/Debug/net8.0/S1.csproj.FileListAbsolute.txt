@@ -1,0 +1,15 @@
+C:\Users\Piotrek\RiderProjects\Laby\lab5\S1\bin\Debug\net8.0\S1.exe
+C:\Users\Piotrek\RiderProjects\Laby\lab5\S1\bin\Debug\net8.0\S1.deps.json
+C:\Users\Piotrek\RiderProjects\Laby\lab5\S1\bin\Debug\net8.0\S1.runtimeconfig.json
+C:\Users\Piotrek\RiderProjects\Laby\lab5\S1\bin\Debug\net8.0\S1.dll
+C:\Users\Piotrek\RiderProjects\Laby\lab5\S1\bin\Debug\net8.0\S1.pdb
+C:\Users\Piotrek\RiderProjects\Laby\lab5\S1\obj\Debug\net8.0\S1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Piotrek\RiderProjects\Laby\lab5\S1\obj\Debug\net8.0\S1.AssemblyInfoInputs.cache
+C:\Users\Piotrek\RiderProjects\Laby\lab5\S1\obj\Debug\net8.0\S1.AssemblyInfo.cs
+C:\Users\Piotrek\RiderProjects\Laby\lab5\S1\obj\Debug\net8.0\S1.csproj.CoreCompileInputs.cache
+C:\Users\Piotrek\RiderProjects\Laby\lab5\S1\obj\Debug\net8.0\S1.sourcelink.json
+C:\Users\Piotrek\RiderProjects\Laby\lab5\S1\obj\Debug\net8.0\S1.dll
+C:\Users\Piotrek\RiderProjects\Laby\lab5\S1\obj\Debug\net8.0\refint\S1.dll
+C:\Users\Piotrek\RiderProjects\Laby\lab5\S1\obj\Debug\net8.0\S1.pdb
+C:\Users\Piotrek\RiderProjects\Laby\lab5\S1\obj\Debug\net8.0\S1.genruntimeconfig.cache
+C:\Users\Piotrek\RiderProjects\Laby\lab5\S1\obj\Debug\net8.0\ref\S1.dll
