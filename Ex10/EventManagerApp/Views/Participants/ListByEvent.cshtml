@@ -1,0 +1,22 @@
+﻿@model List<EventManagerApp.Models.Participant>
+@{
+    ViewData["Title"] = "Uczestnicy wydarzenia";
+}
+
+<h2>@ViewData["Title"]: @ViewBag.EventTitle</h2>
+
+<table class="table">
+    <tr>
+        <th>Imię i nazwisko</th>
+        <th>Email</th>
+    </tr>
+    @foreach (var p in Model)
+    {
+        <tr>
+            <td>@p.Name</td>
+            <td>@p.Email</td>
+        </tr>
+    }
+</table>
+
+<a asp-controller="Events" asp-action="Index" class="btn btn-secondary">Powrót do listy wydarzeń</a>

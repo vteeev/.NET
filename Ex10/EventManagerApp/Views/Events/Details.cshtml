@@ -1,0 +1,31 @@
+﻿@model EventManagerApp.Models.Event
+@{
+    ViewData["Title"] = "Szczegóły wydarzenia";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+@if (Model != null)
+{
+    <div>
+        <h4>@Model.Title</h4>
+        <p><strong>Data wydarzenia:</strong> @Model.Date.ToString("dd.MM.yyyy HH:mm")</p>
+        
+        @if (!string.IsNullOrEmpty(Model.Description))
+        {
+            <p><strong>Opis:</strong> @Model.Description</p>
+        }
+        else
+        {
+            <p><strong>Opis:</strong> <em>Brak opisu</em></p>
+        }
+    </div>
+}
+else
+{
+    <div class="alert alert-warning">
+        Wydarzenie nie zostało znalezione.
+    </div>
+}
+
+<a asp-action="Index" class="btn btn-secondary">Powrót</a>
